@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: #261c2c;
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+.naslov1 {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.naslov1 span {
+  color: #6e85b2;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+}
+
+.btn,
+.btnrez {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #000;
+  color: #fff;
+  cursor: pointer;
+  background: #5c527f;
+}
+
+.btn:hover,
+.btnrez:hover {
+  background: #261c2c;
+  color: #fff;
+}
+
+/* ================ Header =================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #5c527f;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: #000;
+}
+
+.header .icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: #5c527f;
+  font-size: 2rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header .icons div:hover {
+  background: #000;
+  color: #fff;
+}
+
+.menu-btn {
+  display: none;
+}
+/* ================ Domov =================== */
+.domov {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/imgs/img3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  height: 100vh;
+}
+.domov .naslov {
+  text-align: center;
+  width: 80rem;
+}
+.domov .naslov h3 {
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: #666;
+}
+.domov .naslov h3 span {
+  color: #6e85b2;
+}
+.domov .naslov p {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+/* ================ Ponudba =================== */
+.ponudba .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.ponudba .box-container .box {
+  padding: 10rem 2rem;
+  background: rgb(219, 219, 219);
+  text-align: center;
+  border-radius: 2%;
+}
+
+.ponudba .box-container .box:hover {
+  background: rgb(196, 196, 196);
+}
+
+.ponudba .box-container .box img {
+  margin: 1rem 0;
+  height: 20rem;
+  border-radius: 7%;
+}
+
+.ponudba .box-container .box h3 {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #261c2c;
+}
+.ponudba .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #261c2c;
+  padding: 1rem 0;
+}
+/* ================ Kolesa =================== */
+.kolesa .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.kolesa .box-container .box {
+  padding: 3rem 2rem;
+  background: rgb(219, 219, 219);
+  text-align: center;
+  border-radius: 2%;
+}
+
+.kolesa .box-container .box:hover {
+  background: rgb(196, 196, 196);
+}
+
+.kolesa .box-container .box img {
+  margin: 1rem 0;
+  height: 30rem;
+  padding: 1rem 0;
+  border-radius: 7%;
+}
+
+.kolesa .box-container .box h3 {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #261c2c;
+}
+.kolesa .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #261c2c;
+  padding: 1rem 0;
+}
+
+/* ================ O nama =================== */
+.onam .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.onam .box-container .box {
+  padding: 10rem 2rem;
+  background: rgb(219, 219, 219);
+  text-align: center;
+  border-radius: 10%;
+}
+
+.onam .box-container .box:hover {
+  background: rgb(196, 196, 196);
+}
+
+.onam .box-container .box img {
+  padding-top: 0;
+  margin: 0 0;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 60%;
+}
+
+.onam .box-container .box h3 {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #261c2c;
+}
+.onam .box-container .box p {
+  font-size: 2.2rem;
+  line-height: 1.8;
+  color: #261c2c;
+  padding: 3rem 0;
+}
+
+.onam .box-container .box i {
+  font-size: 3rem;
+  line-height: 1.8;
+  color: #261c2c;
+  padding: 1rem;
+}
+
+/* ================ Footer =================== */
+.footer {
+  background: #fff;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #6e85b2;
+  padding: 1rem 0;
+}
+.footer .box-container .box h3 i {
+  color: #6e85b2;
+}
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: #261c2c;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: #261c2c;
+  padding: 1rem 0;
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    border-radius: 0.5rem;
+    background: #5c527f;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .naslov1 {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+/* ================ elektricna kola stran =================== */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
+.card {
+  width: 450px;
+  height: 50vh;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.card .card-image {
+  height: 250px;
+  width: 250px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card .card-title {
+  padding: 20px 10px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px #262654;
+}
+.card:nth-child(1) .card-image {
+  background-image: url(imgs/XiaomiC26.jpg);
+}
+.card:nth-child(2) .card-image {
+  background-image: url(imgs/rockrider.webp);
+}
+.card:nth-child(3) .card-image {
+  background-image: url(imgs/geero.png);
+}
+
+.card:nth-child(4) .card-image {
+  background-image: url(imgs/torpado.jpeg);
+}
+
+.card:nth-child(5) .card-image {
+  background-image: url(imgs/rks.jpeg);
+}
+
+.card:nth-child(6) .card-image {
+  background-image: url(imgs/crussis.jpeg);
+}
+
+.card .card-text {
+  line-height: 20px;
+  font-size: 2rem;
+}
+
+.card .card-text span {
+  color: #6e85b2;
+}
+.card .card-text .btn {
+  margin-left: 22px;
+}
+/* =============== navadna kolesa stran ================== */
+.card1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
+.card1 {
+  width: 450px;
+  height: 50vh;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.card1 .card1-image {
+  height: 250px;
+  width: 250px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card1 .card1-title {
+  padding: 20px 10px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px #262654;
+}
+.card1:nth-child(1) .card1-image {
+  background-image: url(imgs/bmx.jpeg);
+}
+.card1:nth-child(2) .card1-image {
+  background-image: url(imgs/head.jpeg);
+}
+.card1:nth-child(3) .card1-image {
+  background-image: url(imgs/beixo.jpeg);
+}
+
+.card1:nth-child(4) .card1-image {
+  background-image: url(imgs/prophete.jpeg);
+}
+
+.card1:nth-child(5) .card1-image {
+  background-image: url(imgs/nature.jpeg);
+}
+
+.card1 .card1-text {
+  line-height: 20px;
+  font-size: 2rem;
+}
+
+.card1 .card1-text span {
+  color: #6e85b2;
+}
+.card1 .card1-text .btn {
+  margin-left: 22px;
+}
+/* ===================== Modal ==================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #6e85b2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #6e85b2;
+  margin: 15% auto;
+  padding: 55px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 20vh;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
